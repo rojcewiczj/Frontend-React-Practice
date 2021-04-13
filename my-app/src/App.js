@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import YCA from './components/YoungestCommonAncestor'
-import DogCarrasel from './components/DogCarrasel'
+import HomeScreen from './components/HomeScreen';
 function App() {
   return (
     <div className="App">
-     <DogCarrasel/>
+     <HomeScreen/>
     </div>
   );
 }
