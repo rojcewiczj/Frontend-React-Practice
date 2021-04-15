@@ -9,12 +9,12 @@ import {
 } from "../constants/dogConstants";
 
 
-export const dogsList = () =>{
+export const dogsList = (breed = "hound") =>{
     return async (dispatch) =>{
         try{
             dispatch({ type: GET_DOGS_REQUEST});
             const { data } = await axios.get(
-            "https://dog.ceo/api/breed/hound/images"
+            `https://dog.ceo/api/breed/${breed}/images`
             );
 
             dispatch({
